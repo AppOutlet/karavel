@@ -18,7 +18,7 @@ Lightweight navigation library for Compose for Desktop
 2. Add the dependency
 ```
 	dependencies {
-		implementation 'com.github.User:Repo:Tag'
+		implementation 'com.github.app-outlet:karavel:1.0.0'
 	}
 ```
 
