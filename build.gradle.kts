@@ -38,9 +38,9 @@ java {
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            groupId = "io.appoutlet"
+            groupId = "io.github.app-outlet"
             artifactId = "karavel"
-            version = "1.0"
+            version = "1.0.1"
 
             from(components["java"])
         }
