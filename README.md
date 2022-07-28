@@ -6,20 +6,19 @@ Lightweight navigation library for Compose for Desktop
 ## Install 
 
 1. Add it in your root build.gradle at the end of repositories:
-```gradle
-	allprojects {
-		repositories {
-			// ...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+```kotlin
+repositories {
+    // ...
+    mavenCentral()
+}
 ```
 
 2. Add the dependency
-```
-	dependencies {
-		implementation 'com.github.app-outlet:karavel:1.0.0'
-	}
+```kotlin
+dependencies {
+    // ...
+    implementation("io.github.app-outlet:karavel:1.0.2")
+}
 ```
 
 ## Usage
