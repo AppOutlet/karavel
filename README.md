@@ -1,19 +1,10 @@
 # ⛵️Karavel
 [![Maintainability](https://api.codeclimate.com/v1/badges/ea792fdab9ab8344cb1c/maintainability)](https://codeclimate.com/github/app-outlet/karavel/maintainability)
 
-Lightweight navigation library for Compose for Desktop 
+Karavel is a very simple and lightweight navigation library for Compose for Desktop. It creates a stack of composables and let you navigate poping and pushing on this stack. 
 
-## Install 
-
-1. Add it in your root build.gradle at the end of repositories:
-```kotlin
-repositories {
-    // ...
-    mavenCentral()
-}
-```
-
-2. Add the dependency
+## Install
+Add the dependency on you `build.gradle.kts` file
 ```kotlin
 dependencies {
     // ...
@@ -38,19 +29,16 @@ class MainPage : Page() {
 ```
 
 ```kotlin
-import androidx.compose.desktop.Window
-import androidx.compose.material.MaterialTheme
-import io.appoutlet.karavel.Karavel
-import io.appoutlet.ui.page.MainPage
+fun main() = application {
+    Window(onCloseRequest = ::exitApplication) {
 
-fun main() = Window {
+        // 3. Create karavel instance passing the main page as argument
+        val karavel = Karavel(MainPage())
 
-    // 3. Create karavel instance passing the main page as argument
-    val karavel = Karavel(MainPage())
-
-    MaterialTheme {
-        // 4. Get the current page content
-        karavel.currentPage().content()
+        MaterialTheme {
+            // 4. Get the current page content
+            karavel.currentPage().content()
+        }
     }
 }
 ```
