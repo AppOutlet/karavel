@@ -8,6 +8,7 @@
 
 # User-specific stuff
 .idea/
+local.properties
 
 # CMake
 cmake-build-*/
