@@ -5,10 +5,9 @@
 # This workflow will build a package using Gradle and then publish it to GitHub packages when a release is created
 # For more information see: https://github.com/actions/setup-java/blob/main/docs/advanced-usage.md#Publishing-using-gradle
 
-name: Gradle Package
+name: Package deployment
 
-on:
-  - pull_request
+on: release
 
 jobs:
   build:
@@ -25,10 +24,10 @@ jobs:
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
-    - name: Build with Gradle
+    - name: Application build
       run: ./gradlew build
 
-    - name: Publish to GitHub Packages
+    - name: Publish to Maven package registry
       run: ./gradlew publish
       env:
         OSSRH_USERNAME: ${{ secrets.OSSRH_USERNAME }}
