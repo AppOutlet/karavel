@@ -11,7 +11,7 @@ plugins {
 }
 
 group = "io.github.app-outlet"
-version = "1.0.1"
+version = "1.0.2"
 
 java {
     withJavadocJar()
