@@ -1,4 +1,4 @@
-name: Package deployment
+name: Code checking
 
 on: pull_request
 
