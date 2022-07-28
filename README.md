@@ -1,5 +1,6 @@
 # ⛵️Karavel
 [![Maintainability](https://api.codeclimate.com/v1/badges/ea792fdab9ab8344cb1c/maintainability)](https://codeclimate.com/github/app-outlet/karavel/maintainability)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.app-outlet/karavel.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.github.app-outlet%22%20AND%20a:%22karavel%22)
 
 Karavel is a very simple and lightweight navigation library for Compose for Desktop. It creates a stack of composables and let you navigate poping and pushing on this stack. 
 
@@ -8,7 +9,7 @@ Add the dependency on you `build.gradle.kts` file
 ```kotlin
 dependencies {
     // ...
-    implementation("io.github.app-outlet:karavel:1.0.2")
+    implementation("io.github.app-outlet:karavel:<version>")
 }
 ```
 
